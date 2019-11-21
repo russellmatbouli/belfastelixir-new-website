@@ -114,4 +114,12 @@ going to do. This is the reason for the README, it can be amended on the fly.
 
 There is enough in this document to facilitate a meetup and to start coding a MVP. 
  
+### Russell opines
+
+1. Event app MVP
+
+A way to add new event pages and allow members to say that they are attending.
+* Event pages can be added manually and use Markdown syntax for formatting
+* Members can add their name to a list without any authentication system
+
 
