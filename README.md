@@ -122,4 +122,119 @@ A way to add new event pages and allow members to say that they are attending.
 * Event pages can be added manually and use Markdown syntax for formatting
 * Members can add their name to a list without any authentication system
 
+2. Event app post-MVP features
+
+#### Permissions / Authorization system
+
+* Admin Super-user
+  * Allowed to perform administrative functions (detailed below)
+* Mailing List admin
+  * Can create a new mailing list
+    * Can assign ownership of a mailing list
+  * Can remove any mailing list member
+  * Can delete any mailing list
+* Mailing list owner
+  * Can remove members from a mailing list they own
+  * Can email members of a mailing list they own
+  * Can delete a mailing list they own
+* Editor
+  * Blog admin
+  * Can edit any blog entries
+* Author
+  * Can create a blog
+  * Can create blog entries or edit an entry they created
+* Super-organiser
+  * Can edit any event
+  * Can email attendees of any event
+* Organiser
+  * Allowed to create a new event or edit an existing event they created
+  * Allowed to email those who have registered interest in their event
+* Member
+  * Can attend or not attend an event
+  * May say that they are interested in attending an event
+  * May add additional information, if requested on event (e.g., dietary
+    or accessibility requirements)
+  * Can opt in or out of mailing lists
+
+##### User / Authentication system
+
+* Register user
+  * This should use verification to prevent abuse (probably the standard 
+    generate token / send via email / authorise account when request is 
+    received with a valid token)
+  * Requires an email address and password
+  * May create a username alias (will default to email address as username)
+* Login
+  * Username / password
+  * 2FA
+* Forgot password
+  * No information disclosure re: whether an account email exists
+* Profile page
+  * May edit fields, as specified globally by admin
+  * Freeform, Markdown formatted, "about me" section
+
+#### Blogs
+
+For Editor accounts:
+
+* Has Author permissions for blogs they do not own
+
+For Author accounts:
+
+* Can create a blog
+* Can edit blog metadata
+* Can create, edit, delete a blog entry that they own or 
+  have edit permissions on
+* Can delete a blog they own
+
+#### Mailing lists
+
+For List admin:
+
+* Has List owner permissions for lists they do not own
+* Can edit members and roles for a list
+
+For List owner:
+
+* Can create a new list
+* Can edit list description
+* Can view list subscribers
+* Can remove a member from a list they own or have permissions on
+* Can delete a list they own
+
+For List member:
+
+* Can subscribe or unsubscribe to a list
+* Will receive emails for that list
+
+#### Events
+
+For organisers:
+
+* Create event
+  * Date / time
+  * Location
+  * Title
+  * Description
+  * Additional information required from attendees (e.g., dietary or
+    accessibility requirements)
+* Edit event
+  * Edit fields listed above
+  * Additional note (date/time stamped on event page)
+* Delete event
+
+All others:
+
+* View event detail
+  * Details as per Events above
+  * List of attendees
+* View event summary
+  * Short version, for widget use
+
+#### Admin system
+
+* User management
+  * Add / edit / delete user
+  * Manage permissions
+  * Fields requested on user profile page
 
