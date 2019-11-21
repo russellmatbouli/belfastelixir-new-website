@@ -25,7 +25,7 @@ We want to replace meetup. Meetup is really, at the guts of it - a website that
 allows you send out emails to a particular group and for the recipients to RSVP
 to the aforementioned meetup.
 
-So with that thinking (this is up for discussion)  we would like the following:
+So with that thinking (this is up for discussion), we would like the following:
 
 - Several 'static' pages:
 
@@ -35,7 +35,7 @@ So with that thinking (this is up for discussion)  we would like the following:
   - Contact Us
   
 - A blog to document each meetup with content via links or integrations to our
-  social meadia channels.
+  social media channels.
 
 - A blog (or a section of the blog promoted to top level status) for "Today I
   learnt"
@@ -70,12 +70,12 @@ to the front end.
 
 ### RSVP page
 
-A simple 'yes' or 'no' chocie given to the user. Uniqueid should tell us the
+A simple 'yes' or 'no' choice given to the user. Uniqueid should tell us the
 user and the meetup in question.
 
 ### Unsubscribe Page
 
-A simple page that takes a unqiueid and automatically unsubscribes users from
+A simple page that takes a uniqueid and automatically unsubscribes users from
 the mailing list. 
 
 ### Admin Section
@@ -110,7 +110,7 @@ Able to send out a bulk email to members that are subscribed
 2. We need to discuss the features first and iron them out.
 
 As this is a meetup we don't want to spend much time talking about what we are
-going to do. This is the reason for the READM, it can be amended on the flyE. 
+going to do. This is the reason for the README, it can be amended on the fly. 
 
 There is enough in this document to facilitate a meetup and to start coding a MVP. 
  
